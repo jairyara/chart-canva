@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+
+    <div>
+        <h1>Sistema de votaciones ETITC</h1>
+
+        <h3>Elija su candidato</h3>
+    
+        <select name="candidates" id="candidates">
+            <option value="disabled" selected disabled>Seleccione una opción</option>
+            <option value="0">Ana</option>
+            <option value="1">Alejandro</option>
+            <option value="2">Antonia</option>
+            <option value="3">Alexandra</option>
+        </select>
+        <input type="button" value="Enviar" onclick="vote()">
+    </div>
+    
+
+    <canvas id="myCanvas" width="800" height="400" style="border: 1px solid black;"></canvas>
+
+    <script src="js/candidate.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
